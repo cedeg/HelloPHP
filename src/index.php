@@ -54,23 +54,33 @@
         <div class="main__container">
             <ul class="main__container__list list">
                 <?php
-                for ($i = 1; $i <= 3; $i++) {
+                for ($i = 1; $i <= 4; $i++) {
+                    if ($i === 1) {
+                        $price = 40;
+                    }
+                    if ($i === 2) {
+                        $price = 60;
+                    }
+                    if ($i === 3) {
+                        $price = 260;
+                    }
+                    if ($i >= 4) {
+                        $price = 100;
+                    }
                     ?>
                     <li class="main__container__list__item item">
                         <div class="main__container__list__item__image-section image-section">
-                            <img alt="" src="media/img_1.png">
+                            <img alt="" src="media/img_<?=$i?>.png">
                         </div>
                         <div class="main__container__list__item__text-section text-section">
-                            <p><span>40</span> € TVAC</p>
-                            <a class="main__container__list__item__link link" data-price="40" href="#">Ajouter au panier</a>
-
+                            <p><span><?= $price ?></span> € TVAC</p>
+                            <a class="main__container__list__item__link link" data-price="<?=$price?>" href="#">Ajouter au
+                                panier</a>
                         </div>
-
                     </li>
                     <?php
                 }
                 ?>
-
             </ul>
 
         </div>
