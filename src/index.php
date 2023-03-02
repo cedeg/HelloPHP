@@ -53,47 +53,24 @@
 
         <div class="main__container">
             <ul class="main__container__list list">
-                <li class="main__container__list__item item">
-                    <div class="main__container__list__item__image-section image-section">
-                        <img alt="" src="media/img_1.png">
-                    </div>
-                    <div class="main__container__list__item__text-section text-section">
-                        <p><span>40</span> € TVAC</p>
-                        <a class="main__container__list__item__link link" data-price="40" href="#">Ajouter au panier</a>
+                <?php
+                for ($i = 1; $i <= 3; $i++) {
+                    ?>
+                    <li class="main__container__list__item item">
+                        <div class="main__container__list__item__image-section image-section">
+                            <img alt="" src="media/img_1.png">
+                        </div>
+                        <div class="main__container__list__item__text-section text-section">
+                            <p><span>40</span> € TVAC</p>
+                            <a class="main__container__list__item__link link" data-price="40" href="#">Ajouter au panier</a>
 
-                    </div>
+                        </div>
 
-                </li>
-                <li class="main__container__list__item item">
-                    <div class="main__container__list__item__image-section image-section">
-                        <img alt="" src="media/img_2.png">
-                    </div>
-                    <div class="main__container__list__item__text-section text-section">
-                        <p><span>60</span> € TVAC</p>
-                        <a class="main__container__list__item__link link" data-price="60" href="#">Ajouter au panier</a>
-                    </div>
+                    </li>
+                    <?php
+                }
+                ?>
 
-                </li>
-                <li class="main__container__list__item item">
-                    <div class="main__container__list__item__image-section image-section">
-                        <img alt="" src="media/img_3.png">
-                    </div>
-                    <div class="main__container__list__item__text-section text-section">
-                        <p><span>32</span> € TVAC</p>
-                        <a class="main__container__list__item__link link" data-price="32" href="#">Ajouter au panier</a>
-                    </div>
-
-                </li>
-                <li class="main__container__list__item item">
-                    <div class="main__container__list__item__image-section image-section">
-                        <img alt="" src="media/img_4.png">
-                    </div>
-                    <div class="main__container__list__item__text-section text-section">
-                        <p><span>63</span> € TVAC</p>
-                        <a class="main__container__list__item__link link" data-price="63" href="#">Ajouter au panier</a>
-                    </div>
-
-                </li>
             </ul>
 
         </div>
