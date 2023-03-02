@@ -55,17 +55,19 @@
             <ul class="main__container__list list">
                 <?php
                 for ($i = 1; $i <= 4; $i++) {
-                    if ($i === 1) {
-                        $price = 40;
-                    }
-                    if ($i === 2) {
-                        $price = 60;
-                    }
-                    if ($i === 3) {
-                        $price = 260;
-                    }
-                    if ($i >= 4) {
-                        $price = 100;
+                    switch ($i) {
+                        case 1:
+                            $price = 40;
+                            break;
+                        case 2:
+                            $price = 200;
+                            break;
+                        case 3:
+                            $price = 95;
+                            break;
+                        case 4:
+                            $price = 160;
+                            break;
                     }
                     ?>
                     <li class="main__container__list__item item">
